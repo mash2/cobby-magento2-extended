@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="cobby_catalog_product_attribute_option_export_after">
+        <observer name="attribute_option" instance="Cobby\Extended\Observer\AttributeOption"/>
+    </event>
+    <event name="cobby_catalog_attribute_export_after">
+        <observer name="attribute" instance="Cobby\Extended\Observer\Attribute"/>
+    </event>
+    <event name="cobby_catalog_product_export_after">
+        <observer name="catalog_product_export" instance="Cobby\Extended\Observer\CatalogProductExport"/>
+    </event>
+    <event name="cobby_import_product_import_after">
+        <observer name="catalog_product_import" instance="Cobby\Extended\Observer\CatalogProductImport"/>
+    </event>
+</config>
